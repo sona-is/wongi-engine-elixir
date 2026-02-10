@@ -3,8 +3,8 @@ defmodule Wongi.Engine.MixProject do
 
   def project do
     [
-      app: :wongi_engine,
-      version: "0.9.19",
+      app: :sona_wongi_engine,
+      version: "0.9.20-alpha.1",
       elixir: "~> 1.15",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
@@ -13,8 +13,8 @@ defmodule Wongi.Engine.MixProject do
         plt_file: {:no_warn, "plts/dialyzer.plt"}
       ],
       name: "Wongi.Engine",
-      description: "A pure-Elixir rule engine.",
-      source_url: "https://github.com/ulfurinn/wongi-engine-elixir",
+      description: "A pure-Elixir rule engine (Sona fork).",
+      source_url: "https://github.com/sona-is/wongi-engine-elixir",
       docs: [
         main: "Wongi.Engine",
         extras: ["pages/ruby.md"],
@@ -63,9 +63,10 @@ defmodule Wongi.Engine.MixProject do
 
   defp package do
     %{
+      organization: "sona",
       licenses: ["MIT"],
       links: %{
-        "GitHub" => "https://github.com/ulfurinn/wongi-engine-elixir"
+        "GitHub" => "https://github.com/sona-is/wongi-engine-elixir"
       }
     }
   end
